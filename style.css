@@ -37,6 +37,17 @@ h1 {
     font-size: 48px;
 }
 
+.fa-refresh {
+    font-size: 38px !important;
+    color: red;
+}
+
+.res {
+    border: 2px solid darkgoldenrod;
+    border-radius: 50%;
+    padding: 11px;
+}
+
 .gold {
     font-weight: 900;
     color: #f2c94c;

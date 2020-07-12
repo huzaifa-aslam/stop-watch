@@ -11,39 +11,50 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>STOPWATCH</title>
 </head>
 
 <body>
-    <div class="stopwatch">
-        <h1><span class="gold">GOLD</span> STOPWATCH</h1>
-        <div class="circle">
-            <span class="time" id="minute">00</span>
-            <span class="time">:</span>
-            <span class="time" id="second">00</span>
-            <span class="time">:</span>
-            <span class="time" id="miliSecond">00</span>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="stopwatch">
+                    <h1><span class="gold">GOLD</span> STOPWATCH</h1>
+                    <div class="circle">
+                        <span class="time" id="minute">00</span>
+                        <span class="time">:</span>
+                        <span class="time" id="second">00</span>
+                        <span class="time">:</span>
+                        <span class="time" id="miliSecond">00</span>
+                    </div>
 
-        <div class="controls">
-            <button class="buttonPlay" id="start" onclick="timeStart()">
-            <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+                    <div class="controls">
+                        <button class="buttonPlay" id="start" onclick="timeStart()">
+                        <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
 
-            <img id="pauseButton" onclick="start()"  src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
-          </button>
+                        <img id="pauseButton" onclick="start()"  src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+                      </button>
 
-            <button class="buttonReset" id="reset" onclick="stop()">
-            <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
-          </button>
-            <button onclick="reset()">
-              Reset
-          </button>
+                        <button class="buttonReset" id="reset" onclick="stop()">
+                        <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+                      </button>
+                        <button class="res" onclick="reset()">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+
+                      </button>
 
 
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
+
 
     <!--/.wrapper -->
 
