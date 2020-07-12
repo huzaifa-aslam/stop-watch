@@ -34,7 +34,10 @@ function start() {
 }
 
 function stop() {
+if(stop){
+  startTime.disabled=false
 
+}
 
         clearInterval(interval)
 
